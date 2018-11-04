@@ -1,6 +1,6 @@
 const path = require('path');
 
-const mineTypes = {
+const mimeTypes = {
   'css': 'text/css',
   'gif': 'image/gif',
   'html': 'text/html',
@@ -30,5 +30,5 @@ module.exports = (filePath) => {
   if (!ext) {
     ext = filePath;
   }
-  return mineTypes[ext] || mineTypes['txt'];
+  return mimeTypes[ext] || mimeTypes['txt'];
 }
