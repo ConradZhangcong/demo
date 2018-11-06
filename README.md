@@ -7,3 +7,7 @@
 ## anydoor
 
 > `node.js` 静态资源服务器
+
+## building
+
+> 使用 `gulp` `babel` `webpack` 本地构建
