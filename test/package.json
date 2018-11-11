@@ -5,16 +5,23 @@
   "main": "index.js",
   "scripts": {
     "mocha": "mocha test/mocha.js",
-    "cover": "nyc mocha"
+    "cover": "nyc mocha",
+    "test": "jest"
   },
   "author": "Conrad",
   "license": "ISC",
   "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "chai": "^4.2.0",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0"
+    "jest": "^23.6.0",
+    "mocha": "^5.2.0",
+    "react-test-renderer": "^16.6.1"
   },
   "dependencies": {
-    "benchmark": "^2.1.4"
+    "benchmark": "^2.1.4",
+    "react": "^16.6.1"
   }
 }
