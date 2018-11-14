@@ -12,7 +12,9 @@ var PAGE_PATH = path.resolve(__dirname, '../src/pages')
 // 用于做相应的merge处理
 var merge = require('webpack-merge')
 
-//多入口配置
+/* 这里是添加的部分 ---------------------------- 开始 */
+
+// 多入口配置
 // 通过glob模块读取pages文件夹下的所有对应文件夹下的js后缀文件，如果该文件存在
 // 那么就作为入口处理
 exports.entries = function() {
@@ -25,7 +27,7 @@ exports.entries = function() {
   return map
 }
 
-//多页面输出配置
+// 多页面输出配置
 // 与上面的多页面入口配置相同，读取pages文件夹下的对应的html后缀文件，然后放入数组中
 exports.htmlPlugin = function() {
   let entryHtml = glob.sync(PAGE_PATH + '/*/*.html')
@@ -55,6 +57,8 @@ exports.htmlPlugin = function() {
   })
   return arr
 }
+
+/* 这里是添加的部分 ---------------------------- 结束 */
 
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
