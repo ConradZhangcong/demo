@@ -2,7 +2,9 @@
   <div class="register">
     <p>注册页面</p>
     <button @click="handleOpen">注册</button>
-    <popup :showPop="showPop"></popup>
+    <popup :showPop="showPop"
+           v-model="showPop"
+           @handleClose="handleClose"></popup>
   </div>
 </template>
 
@@ -22,6 +24,9 @@ export default {
   methods: {
     handleOpen () {
       this.showPop = true
+    },
+    handleClose () {
+      this.showPop = false
     }
   }
 }

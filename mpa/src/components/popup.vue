@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     handleClose () {
-      this.showPop = false
+      this.$emit('handleClose', false)
     }
   }
 }
