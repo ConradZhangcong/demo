@@ -8,11 +8,12 @@
 - [本地构建 building](#building)
 - [测试 test](#test)
 - [爬虫 handless-crawler](#handless-crawler)
+- [axios封装 vue-axios](#vue-axios)
 
 ### mpa
 
 > `vue-cli2`搭建的`多页面应用`(`MPA`)  
-> 弹出层demo
+> 弹出层 demo
 
 ### anydoor
 
@@ -33,3 +34,7 @@
 ### handless-crawler
 
 > 使用`GoogleChrome`的`puppeteer`爬取百度图片
+
+## vue-axios
+
+> 二次封装`axios` 使用`element-ui`的弹出框框架

@@ -1,7 +1,7 @@
 export default {
   method: 'post',
   // 基础url前缀
-  baseURL: 'http://10.202.4.49:8080/users',
+  baseURL: '/',
   // 请求头信息
   headers: {
     'Content-Type': 'application/json;charset=UTF-8'

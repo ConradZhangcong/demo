@@ -8,7 +8,7 @@ import axios from './api' // 倒入 api
 // 单独倒出
 export const getUserList = params => {
   return axios({
-    url: '/users',
+    url: '/mock',
     method: 'get',
     params
   })
