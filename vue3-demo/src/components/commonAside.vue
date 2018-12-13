@@ -8,7 +8,8 @@
              background-color="#324157"
              text-color="#bfcbd9"
              active-text-color="#20a0ff"
-             unique-opened>
+             unique-opened
+             router>
       <!-- <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
@@ -27,9 +28,18 @@
           <el-menu-item index="1-4-1">选项1</el-menu-item>
         </el-submenu>
       </el-submenu> -->
-      <li><router-link to="/home">首页</router-link></li>
-      <li><router-link to="/document">文档</router-link></li>
-      <li><router-link to="/about">关于我们</router-link></li>
+      <el-menu-item index="home">
+        <i class="el-icon-menu"></i>
+        <span slot="title">首页</span>
+      </el-menu-item>
+      <el-menu-item index="document">
+        <i class="el-icon-document"></i>
+        <span slot="title">文档</span>
+      </el-menu-item>
+      <el-menu-item index="about">
+        <i class="el-icon-setting"></i>
+        <span slot="title">关于我们</span>
+      </el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -77,4 +87,6 @@ export default {
   .el-menu-vertical:not(.el-menu--collapse)
     width 240px
     min-height 400px
+.is-active
+  background red
 </style>
